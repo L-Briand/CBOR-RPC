@@ -79,11 +79,11 @@ be sufficient.
 
 ### Example
 
-When encoding, you write the header as tuple (list) following the fields orders `id`, `vrpc`, `vapi`, `event`, `name`.
+When encoding, you write the header as tuple (list) following the fields orders `vrpc`, `vapi`, `id`, `event`, `name`.
 
 ```yaml
-# [id, vrpc, vapi, event, name]
-[ 33, 1, 0, 0, "my.function.name" ]
+# [vrpc, vapi, id, event, name]
+[ 1, 0, 33, 0, "my.function.name" ]
 ```
 
 With everything combined, an envelope can look like this:
